@@ -1,0 +1,33 @@
+@use '../../style' as s;
+
+$primary-color: #35363a;
+$input-color: #202124;
+
+main {
+  max-width: 620px;
+  margin: 0 auto;
+  background: $primary-color;
+  color: white;
+  border-radius: s.space(8);
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  gap: s.space(3);
+  padding: s.space(1) s.space(6);
+}
+.nav__button {
+  margin: s.space(2) 0;
+  transition: 0.7s;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+.nav__input {
+  width: 370px;
+  background-color: $input-color;
+  border-radius: s.space(4);
+  color: white;
+  padding: s.space(2);
+  margin: s.space(2);
+}
